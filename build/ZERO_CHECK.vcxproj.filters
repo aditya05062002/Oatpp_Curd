@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Aditya\Desktop\Curd Swagger\build\CMakeFiles\ad90eadddfd5fe27e07d66986b24ea8d\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A09568E9-0DD6-3EDF-BF92-4E374110AC32}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

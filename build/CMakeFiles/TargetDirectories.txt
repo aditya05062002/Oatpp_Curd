@@ -1,0 +1,6 @@
+C:/Users/Aditya/Desktop/Curd Swagger/build/CMakeFiles/crud-lib.dir
+C:/Users/Aditya/Desktop/Curd Swagger/build/CMakeFiles/crud-exe.dir
+C:/Users/Aditya/Desktop/Curd Swagger/build/CMakeFiles/crud-test.dir
+C:/Users/Aditya/Desktop/Curd Swagger/build/CMakeFiles/RUN_TESTS.dir
+C:/Users/Aditya/Desktop/Curd Swagger/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Aditya/Desktop/Curd Swagger/build/CMakeFiles/ZERO_CHECK.dir

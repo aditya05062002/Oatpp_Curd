@@ -1,0 +1,10 @@
+^C:\USERS\ADITYA\DESKTOP\CURD SWAGGER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Aditya/Desktop/Curd Swagger" "-BC:/Users/Aditya/Desktop/Curd Swagger/build" --check-stamp-file "C:/Users/Aditya/Desktop/Curd Swagger/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
