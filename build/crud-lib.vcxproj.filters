@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Aditya\Desktop\Curd Swagger\src\service\UserService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Aditya\Desktop\Curd Swagger\src\ErrorHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Aditya\Desktop\Curd Swagger\src\controller\StaticController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Aditya\Desktop\Curd Swagger\src\controller\UserController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Aditya\Desktop\Curd Swagger\src\db\UserDb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Aditya\Desktop\Curd Swagger\src\dto\PageDto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Aditya\Desktop\Curd Swagger\src\dto\StatusDto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Aditya\Desktop\Curd Swagger\src\dto\UserDto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Aditya\Desktop\Curd Swagger\src\service\UserService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Aditya\Desktop\Curd Swagger\src\AppComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Aditya\Desktop\Curd Swagger\src\DatabaseComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Aditya\Desktop\Curd Swagger\src\SwaggerComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Aditya\Desktop\Curd Swagger\src\ErrorHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Aditya\Desktop\Curd Swagger\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{95274003-3D6F-3D64-88E7-20B3FE4F1E81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F365BFBE-67AF-3C0D-81E8-BF72D899BF40}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

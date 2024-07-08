@@ -1,8 +1,8 @@
 
-#include "AppComponent.hpp"
+#include "AppComponent.h"
 
-#include "controller/UserController.hpp"
-#include "controller/StaticController.hpp"
+#include "controller/UserController.h"
+#include "controller/StaticController.h"
 
 #include "oatpp-swagger/Controller.hpp"
 
@@ -12,9 +12,9 @@
 
 void run() {
   
-  AppComponent components; // Create scope Environment components
+  AppComponent components; // Environment components Object
   
-  /* Get router component */
+  // Router component is here
   OATPP_COMPONENT(std::shared_ptr<oatpp::web::server::HttpRouter>, router);
 
   oatpp::web::server::api::Endpoints docEndpoints;
@@ -24,13 +24,13 @@ void run() {
   router->addController(oatpp::swagger::Controller::createShared(docEndpoints));
   router->addController(StaticController::createShared());
 
-  /* Get connection handler component */
+  // Connection Handler component
   OATPP_COMPONENT(std::shared_ptr<oatpp::network::ConnectionHandler>, connectionHandler);
 
-  /* Get connection provider component */
+  // connection provider component 
   OATPP_COMPONENT(std::shared_ptr<oatpp::network::ServerConnectionProvider>, connectionProvider);
 
-  /* create server */
+  // creating server
   oatpp::network::Server server(connectionProvider,
                                 connectionHandler);
   
@@ -38,23 +38,19 @@ void run() {
   
   server.run();
 
-  /* stop db connection pool */
+  // stop db connection pool
   OATPP_COMPONENT(std::shared_ptr<oatpp::provider::Provider<oatpp::sqlite::Connection>>, dbConnectionProvider);
   dbConnectionProvider->stop();
   
 }
 
-/**
- *  main
- */
 int main(int argc, const char * argv[]) {
 
   oatpp::Environment::init();
 
   run();
   
-  /* Print how many objects were created during app running, and what have left-probably leaked */
-  /* Disable object counting for release builds using '-D OATPP_DISABLE_ENV_OBJECT_COUNTERS' flag for better performance */
+  // Print how many objects were created during app running
   std::cout << "\nEnvironment:\n";
   std::cout << "objectsCount = " << oatpp::Environment::getObjectsCount() << "\n";
   std::cout << "objectsCreated = " << oatpp::Environment::getObjectsCreated() << "\n\n";

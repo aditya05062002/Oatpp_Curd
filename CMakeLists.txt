@@ -4,19 +4,19 @@ project(crud)
 set(CMAKE_CXX_STANDARD 17)
 
 add_library(crud-lib
-        src/controller/StaticController.hpp
-        src/controller/UserController.hpp
-        src/db/UserDb.hpp
-        src/dto/PageDto.hpp
-        src/dto/StatusDto.hpp
-        src/dto/UserDto.hpp
+        src/controller/StaticController.h
+        src/controller/UserController.h
+        src/db/UserDb.h
+        src/dto/PageDto.h
+        src/dto/StatusDto.h
+        src/dto/UserDto.h
         src/service/UserService.cpp
-        src/service/UserService.hpp
-        src/AppComponent.hpp
-        src/DatabaseComponent.hpp
-        src/SwaggerComponent.hpp
+        src/service/UserService.h
+        src/AppComponent.h
+        src/DatabaseComponent.h
+        src/SwaggerComponent.h
         src/ErrorHandler.cpp
-        src/ErrorHandler.hpp)
+        src/ErrorHandler.h)
 
 ## include directories
 
@@ -72,10 +72,10 @@ target_link_libraries(crud-exe crud-lib)
 
 add_executable(crud-test
         test/tests.cpp
-        test/app/TestClient.hpp
-        test/app/TestDatabaseComponent.hpp
-        test/app/TestComponent.hpp
-        test/UserControllerTest.hpp
+        test/app/TestClient.h
+        test/app/TestDatabaseComponent.h
+        test/app/TestComponent.h
+        test/UserControllerTest.h
         test/UserControllerTest.cpp)
 target_link_libraries(crud-test crud-lib)
 

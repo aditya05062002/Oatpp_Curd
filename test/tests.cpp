@@ -1,7 +1,7 @@
 
 #include "oatpp-test/UnitTest.hpp"
 #include "oatpp/Environment.hpp"
-#include "UserControllerTest.hpp"
+#include "UserControllerTest.h"
 
 #include <iostream>
 
@@ -21,8 +21,6 @@ int main() {
 
   runTests();
 
-  /* Print how much objects were created during app running, and what have left-probably leaked */
-  /* Disable object counting for release builds using '-D OATPP_DISABLE_ENV_OBJECT_COUNTERS' flag for better performance */
   std::cout << "\nEnvironment:\n";
   std::cout << "objectsCount = " << oatpp::Environment::getObjectsCount() << "\n";
   std::cout << "objectsCreated = " << oatpp::Environment::getObjectsCreated() << "\n\n";
